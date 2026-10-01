@@ -2,20 +2,19 @@
 
 int main(void)
 {
-    int c;
-    int num = 0;
+    int num;
+    int i;
+    int sum = 0;
 
-    printf("Input a string: ");
+    printf("Input a number: ");
+    scanf("%d", &num);
 
-    while ((c = getchar()) != '\n')
+    for (i = 1; i <= num; i++)
     {
-        if (c >= '0' && c <= '9')
-        {
-            num++;
-        }
+        sum = sum + i;
     }
 
-    printf("the number of digits is %d\n", num);
+    printf("The result is %d\n", sum);
 
     return 0;
-}
+} 
