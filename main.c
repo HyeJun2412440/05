@@ -4,21 +4,15 @@ int main(void)
 {
     int num;
 
-    printf("정수를 입력하세요: ");
+    printf("정수 하나를 입력하시오: ");
     scanf("%d", &num);
 
-    if (num > 0)
+    if (num < 0)
     {
-        printf("입력한 정수는 양수입니다.\n");
+        num = -num;
     }
-    else if (num < 0)
-    {
-        printf("입력한 정수는 음수입니다.\n");
-    }
-    else
-    {
-        printf("입력한 정수는 0입니다.\n");
-    }
+
+    printf("절댓값은 %d입니다.\n", num);
 
     return 0;
 }
